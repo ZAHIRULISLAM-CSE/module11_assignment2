@@ -130,6 +130,12 @@ header{
     line-height: 53px;
     color:black;
     margin-bottom: 24px;
+    display: flex;
+    gap: 15px;
+}
+.resize{
+    font-weight: 300;
+    font-size: 30px;
 }
 .off-our{
     color: black;
@@ -170,10 +176,6 @@ header{
     border-left: 5px solid#FF900E;
     width: 5px;
     height: 106px;
-}
-.section-title{
-    display: flex;
-    gap: 15px;
 }
 .experience{
     position: relative;
@@ -334,6 +336,6 @@ header{
         padding-left: 20px;
     }
     .some-fact-lower-section{
-        margin-bottom: 00px;
+        margin-bottom: 0px;
     }
 }
