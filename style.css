@@ -94,17 +94,25 @@ header{
     display: flex;
     gap:70px;
     align-items: center;
-    width: 90%;
+    width: 80%;
+    margin-bottom: 60px;
+}
+.feature>div{
+    flex: 1;
 }
 .feature-img{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 24px;
-    place-items:center;
+    place-items:center;  
 }
-.feature-description{
+.feature-img img{
+    width: 100%;
+    height: auto;
+}
+.section-description-text{
     font-weight: 400;
-    font-size: 11px;
+    font-size: 17px;
     line-height: 26px;
     color: #727272;
     margin-bottom:32px;
@@ -116,12 +124,80 @@ header{
     color: #727272;
     margin-bottom: 24px;
 }
+.section-title{
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    color:black;
+    margin-bottom: 24px;
+}
 .off-our{
     color: black;
 }
 .feature-text-color{
     color: #FF900E;
 }
+/* Love Enjoy section Css start */
+.love-enjoy{
+    display: flex;
+    width: 90%;
+    gap: 100px;
+}
+.love-enjoy>div{
+    flex: 1;
+}
+.love-enjoy-img img{
+    width: 100%;
+    height: 100%;
+}
+.feature-text-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;  
+    color: #131313;
+}
+.love-enjoy-title-text{
+    margin-bottom: 30px;
+}
+.single-feature{
+    margin-bottom: 35px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding:30px 42px 30px 30px;
+}
+.vl {
+    border-left: 5px solid#FF900E;
+    width: 5px;
+    height: 106px;
+}
+.section-title{
+    display: flex;
+    gap: 15px;
+}
+.experience{
+    position: relative;
+    top:-80px;
+    left: -70px;
+    width: 250px;
+    height: 150px;
+    background-color: #FF900E;
+    padding: 46px 42px 45px 42px;
+    text-align: center;
+    border-radius: 10px;
+}
+.experience-header{
+    font-weight: 700;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+.experience-text{
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
 
 
 
@@ -158,5 +234,32 @@ header{
     .feature-img img{
         width: 85%;
     }
-    
+    .feature-list{
+        padding-left: 5px;
+    }
+    /* Love Enjoy section Media query start */
+    .love-enjoy{
+        flex-direction: column;
+        padding-left: 5px;
+    }
+    .experience{
+        position:static;
+        width: 150px;
+        height: 80px;
+        background-color: #FF900E;
+        padding: 20px 25px 22px 25px;
+        text-align: center;
+        border-radius:5px;
+    }
+    .experience-header{
+        font-weight: 400;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    .experience-text{
+        font-weight: 300;
+        font-size: 10px;
+        text-align: center;
+        color: #FFFFFF;
+    }
 }
