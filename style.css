@@ -140,8 +140,9 @@ header{
 /* Love Enjoy section Css start */
 .love-enjoy{
     display: flex;
-    width: 90%;
+    width: 80%;
     gap: 100px;
+    margin-bottom: 200px;
 }
 .love-enjoy>div{
     flex: 1;
@@ -196,6 +197,59 @@ header{
     text-align: center;
     color: #FFFFFF;
 }
+/* Main and love enjoy section css end */
+/* Some Fact Section Css start */
+
+.some-fact-upper-section{
+    display: flex;
+    justify-content: center;
+}
+
+.some-fact{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content:flex-start;
+    margin-bottom: 100px;
+}
+.some-fact .section-description{
+    width: 46%;
+}
+.some-fact-lower-section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+.some-fact-icon{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+.icon-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 241.83px;
+    height: 241.83px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+}
+.img-icon{
+    margin-bottom: 10px;
+}
+.total-number{
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+}
+.icon-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #727272
+}
 
 
 
@@ -240,7 +294,7 @@ header{
     /* Love Enjoy section Media query start */
     .love-enjoy{
         flex-direction: column;
-        padding-left: 5px;
+        padding-left: 8px;
     }
     .experience{
         position:static;
@@ -261,5 +315,25 @@ header{
         font-size: 10px;
         text-align: center;
         color: #FFFFFF;
+    }
+    .love-enjoy{
+        margin-bottom: 120px;
+    }
+    .love-enjoy-img img{
+        margin-bottom: 50px;
+    }
+    /* Some Fact Media Query */
+    .some-fact-icon{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .some-fact .section-description{
+        width: 90%;
+    }
+    .some-fact{
+        padding-left: 20px;
+    }
+    .some-fact-lower-section{
+        margin-bottom: 00px;
     }
 }
