@@ -144,6 +144,9 @@ header{
 .feature-text-color{
     color: var(--orange-color);
 }
+.feature-text-title{
+    margin-bottom: 20px;
+}
 /* Love Enjoy section Css start */
 .love-enjoy{
     display: flex;
