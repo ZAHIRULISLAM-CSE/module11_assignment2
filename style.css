@@ -1,6 +1,7 @@
 /* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Open+Sans&family=PT+Sans:ital@1&family=Work+Sans&display=swap');
 :root{
+    --primary-color:white;
     --secondary-color:rgba(255, 144, 14, 0.1);
     --primary-font:'Work Sans', sans-serif;
 }
@@ -16,13 +17,15 @@ header{
 }
 .title-nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 140px;
 }
 .nav-item{
     display: flex;
     gap:30px;
     margin-top:63px;
+    margin-right: 100px;
+    
 }
 .nav-item a{
     text-decoration: none;
@@ -30,6 +33,7 @@ header{
     font-size:1.125rem;
     line-height: 1.625rem;
     color: #424242;
+   
 
 }
 .header-title{
@@ -38,6 +42,7 @@ header{
     font-size: 2.8125rem;
     line-height: 3.3125rem;
     font-family:var(--primary-font);
+    margin-left: 5%;
 }
 .header-middle-text{
     text-align: center;
@@ -71,17 +76,58 @@ header{
 .banner{
     display: flex;
     justify-content: space-around;
-    padding-bottom:100px;
+    padding-bottom:50px;
 }
 .banner img{
-    width: 75%;
+    width: 90%;
 }
 /* Header Css Completed */
+/* Main CSS start */
+/* Feature Section */
+.main{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.feature{
+    display: flex;
+    gap:70px;
+    align-items: center;
+    width: 90%;
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    place-items:center;
+}
+.feature-description{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom:32px;
+}
+.feature-title{
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    color: #727272;
+    margin-bottom: 24px;
+}
+.off-our{
+    color: black;
+}
+.feature-text-color{
+    color: #FF900E;
+}
 
 
 
 /* Media query for mobile divices */
 @media screen and (max-width:576px) {
+    /* Header Media Query */
     .title-nav{
        flex-direction: column;
        align-items: center;    
@@ -100,6 +146,16 @@ header{
         padding: 20px;
     }
     .banner img{
+        width: 85%;
+    }
+    /* features media query */
+    .feature{
+        flex-direction: column;
+    }
+    .feature-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .feature-img img{
         width: 85%;
     }
     
