@@ -134,8 +134,8 @@ header{
     gap: 15px;
 }
 .resize{
-    font-weight: 300;
-    font-size: 30px;
+    font-weight: 500;
+    font-size: 45px;
 }
 .off-our{
     color: black;
@@ -297,6 +297,10 @@ header{
     .love-enjoy{
         flex-direction: column;
         padding-left: 8px;
+    }
+    .resize{
+        font-weight: 300;
+        font-size: 30px;
     }
     .experience{
         position:static;
