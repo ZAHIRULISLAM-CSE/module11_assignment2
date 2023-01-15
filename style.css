@@ -252,6 +252,40 @@ header{
     line-height: 23px;
     color: #727272
 }
+/* Sponspor Section Css Start */
+.center{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.sponsor-title{
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 53px;
+        color:black;
+        margin-bottom: 24px;
+ } 
+ .sponsor-image{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-bottom: 130px;
+ }
+ .sponsor-image img{
+    filter: grayscale(100%);
+ }
+ footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+ }
+ .footer-description{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+ }
 
 
 
@@ -340,6 +374,28 @@ header{
         padding-left: 20px;
     }
     .some-fact-lower-section{
-        margin-bottom: 0px;
+        margin-bottom: 100px;
     }
+    /* Sponsor Section media query */
+    .sponsor-image img{
+        width: 50%;
+     }
+    .sponsor-image{
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+     }
+     .sponsor .section-description{
+        padding-left: 8%;
+     }
+     /* Footer Media Query */
+     .footer-description{
+        width: 80%;
+        height: 100px;
+        padding-left: 20px;
+        padding-right: 5px;
+     }
+     footer{
+        margin-bottom:100px;
+     }
 }
