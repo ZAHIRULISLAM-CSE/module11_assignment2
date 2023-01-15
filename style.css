@@ -37,6 +37,9 @@ header{
    
 
 }
+.three{
+    color: var(--orange-color);
+}
 .header-title{
     margin-top:50px;
     font-weight: 700;
